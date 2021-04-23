@@ -13,9 +13,13 @@ namespace FizzBuzzTest
                 {
                     Console.WriteLine("FizzBuzz");
                 }
+                if (i == 15)
+                {
+                    Console.WriteLine("\n\nThe");
+                }
                 if (i == 16)
                 {
-                    Console.WriteLine("\n\nThe End");
+                    Console.WriteLine("End");
                 }
                 else if (i % 3 == 0)
                 {
@@ -23,38 +27,13 @@ namespace FizzBuzzTest
                 }
                 else if (i % 5 == 0)
                 {
-                    for (int k = 1; k <= 12; k++)
-                    {
-                        string str = "";
-                        if (k % 3 == 0)
-                        {
-                            str += "Ziff";
-                        }
-                        if (k % 5 == 0)
-                        {
-                            str += "Zubb";
-                        }
-                        if (k % 7 == 0)
-                        {
-                            str += "Zubb";
-                        }
-
-                        if (str.Length == 0)
-                        {
-                            str = k.ToString();
-                        }
-                        Console.WriteLine(str);
-
-                    }
+                        Console.WriteLine("?");
                 }
                 else
                 {
                     Console.WriteLine(i);
                 }
 
-                
-
-                
             }
         }
     }
